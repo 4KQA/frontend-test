@@ -1,0 +1,709 @@
+/*
+Import required fonts: 
+	- Open Sans 300
+	- Open Sans Italic 300
+	- Source Sans Pro 400
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Source+Sans+Pro&display=swap');
+
+:root {
+	/* Overall Color Palette */
+	--primaryBlue: #00609C;
+	--secondaryPurple: #C017A2;
+	--darkenBackground: linear-gradient(rgb(0 0 0/40%) 0 0);
+
+	/* Navigation Bar */
+	--navigationSeachBarOutline: #CCCCCC;
+	--navigationSearchBarText: #575757;
+	--navigationBarSubMenuBG: #E6E7E8;
+
+	/* Sections */
+	--graySectionBackgrounds: #EEEEEE;
+
+	/* Page Sizes */
+	--maxWidthContent: 1081px;
+	--maxWidthWholePage: 1445px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Source Sans;
+}
+
+section {
+	font-family: Open Sans;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/* --- Navigation Bar --- */
+.navigationBar {
+	font-family: Source Sans Pro;
+	margin-top: 29px;
+}
+
+.navigationTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 51px;
+	max-width: var(--maxWidthContent);
+	margin: auto;
+
+}
+
+.navigationSearchBarContainer {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: var(--maxWidthContent);
+}
+
+.navigationSearchBar {
+	box-sizing: border-box;
+	width: 354px;
+	height: 51px;
+	border: 1px solid var(--navigationSeachBarOutline);
+	border-radius: 25.5px;
+	padding-left: 26.5px;
+	padding-right: 55px;
+	color: var(--navigationSearchBarText);
+	font-family: Source Sans Pro;
+	font-size: 12px;
+}
+
+.navigationSearchBarIcon {
+	position: absolute;
+	right: 23.76px;
+}
+
+.navigationBarMenusContainer {
+	margin-top: 63px;
+}
+
+.navigationBarMenus {
+	width: 100%;
+	height: 52px;
+	width: 100%;
+}
+
+.navigationBarMenus ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	max-width: var(--maxWidthContent);
+	margin: auto;
+}
+
+.navigationBarMenus ul li {
+	display: inline;
+	float: left;
+	line-height: 52px;
+	padding: 0 25px;
+}
+
+.navigationBarMenus ul li:hover {
+	font-style: italic;
+}
+
+.navigationBarMenus ul li:is(:first-child) {
+	margin-left: -25px;
+}
+
+.navigationBarMenus ul li a {
+	color: white;
+}
+
+.navigationBarSubMenu {
+	background-color: var(--navigationBarSubMenuBG);
+	height: 72px;
+	width: 100%;
+	color: var(--primaryBlue);
+	display: none;
+	z-index: 3;
+	position: absolute;
+}
+
+.navigationBarSubSubMenu {
+	background-color: var(--primaryBlue);
+	height: 72px;
+	width: 100%;
+	margin-top: 72px;
+	color: white;
+	display: none;
+	z-index: 4;
+	position: absolute;
+}
+
+.navigationBarMenu ul li {
+	line-height: 52px;
+	position: relative;
+}
+
+.navigationBarSubMenu ul li, .navigationBarSubSubMenu ul li {
+	line-height: 72px;
+	position: relative;
+}
+
+.navigationBarSubMenu ul li:focus, .navigationBarSubMenu ul li:hover, .navigationBarSubSubMenu ul a:focus, .navigationBarSubSubMenu ul a:hover {
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	font-style: italic;
+}
+
+.navigationBarMenu ul li:focus:before, .navigationBarMenu ul li:hover:before, .navigationBarSubMenu ul li:focus:before, .navigationBarSubMenu ul li:hover:before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 50%;
+	display: inline-block;
+}
+
+.navigationBarMenu ul li:focus:before, .navigationBarMenu ul li:hover:before {
+	background-color: var(--navigationBarSubMenuBG);
+	transform: translate(-50%, 44.5px) rotate(45deg);
+}
+
+.navigationBarSubMenu ul li:focus:before, .navigationBarSubMenu ul li:hover:before {
+	background-color: var(--primaryBlue);
+	transform: translate(-50%, 64.5px) rotate(45deg);
+}
+
+
+
+
+/* --- Hero --- */
+.hero {
+	height: 405px;
+	width: var(--maxWidthWholePage);
+	background-image: url("assets/images/IVA-Cover-ohne-retuschiert 1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin: auto;
+	position: relative;
+}
+
+.heroTextContainer {
+	position: absolute;
+	padding-top: 49px;
+	display: flex;
+	align-items: center;
+	width: var(--maxWidthWholePage);
+}
+
+.heroBackgroundBlock {
+	background-color: #06172A;
+	width: 313px;
+	height: 405px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.heroText {
+	margin: auto;
+	width: 100%;
+	height: 500px;
+	max-width: var(--maxWidthContent);
+	color: white;
+	font-size: 28px;
+	z-index: 2;
+}
+
+.heroText p {
+	margin: 0;
+	width: 478px;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	line-height: 36.4px;
+	white-space: nowrap;
+}
+
+
+
+/* --- Product Section --- */
+.product {
+	background-color: var(--graySectionBackgrounds);
+	max-width: var(--maxWidthWholePage);
+	margin: auto;
+	display: flex;
+	align-items: center;
+	padding: 49px 0 46.6px 0;
+}
+
+.productHalf {
+	width: 50%;
+	height: 100%;
+}
+
+.productImage {
+	float: right;
+	margin-right: 50px;
+}
+
+.productTextHeader {
+	color: var(--primaryBlue);
+	font-size: 28px;
+	line-height: 36.4px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	margin: 0;
+}
+
+.productTextSub {
+	margin: 25px 0 0 0;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+}
+
+
+
+/* --- Info Section --- */
+.info {
+	display: flex;
+	width: var(--maxWidthContent);
+	margin: auto;
+	justify-content: space-around;
+	text-align: center;
+	padding-bottom: 95px;
+}
+
+.infoCard {
+	padding-top: 113px;
+}
+
+.infoCardIcon {
+	width: 180px;
+	height: 180px;
+	color: var(--primaryBlue);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+.infoCardIcon img {
+	transform: scale(1.2);
+	padding-top: 18px;
+}
+
+.infoCardIconTextHeader {
+	margin: 0;
+	font-size: 90px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	line-height: 90px;
+}
+
+.infoCardIconTextSub {
+	margin: 0;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+}
+
+.infoCardText {
+	padding-top: 32px;
+}
+
+.infoCardTextHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	line-height: 26px;
+	font-style: italic;
+}
+
+.infoCardTextSub {
+	margin: 0;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.infoCardText a {
+	color: var(--secondaryPurple);
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+
+
+/* --- Featured Video Section --- */
+.featuredVideoSection {
+	background-color: var(--graySectionBackgrounds);
+	width: var(--maxWidthWholePage);
+	margin: auto;
+	justify-content: space-around;
+	padding-bottom: 79.58px;
+}
+
+.featuredVideoTextHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 28px;
+	line-height: 33.6px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	padding-top: 94px;
+	padding-bottom: 22px;
+}
+
+.featuredVideoTextSub {
+	margin: 0;
+	font-size: 16px;
+	line-height: 24px;
+	font-style: italic;
+	padding-top: 121px;
+}
+
+.featuredVideoContainer {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+}
+
+.featuredVideoFlexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.featuredVideoFlexbox img {
+	cursor: pointer;
+}
+
+.featuredVideoButton {
+	background-color: var(--secondaryPurple);
+	border-radius: 100px;
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 0.71px;
+	line-height: 27.24px;
+	padding: 12.6px 26px;
+	font-family: Open Sans;
+	border: none;
+	cursor: pointer;
+}
+
+.featuredVideoButton:hover {
+	background-image: var(--darkenBackground);
+}
+
+.featuredVideoLength {
+	padding-top: 21px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 21px;
+	font-style: italic;
+}
+
+
+
+/* --- Guides Section --- */
+
+.guides {
+	padding-bottom: 129px;
+}
+
+.guidesContainer {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+}
+
+.guidesTextHeader {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 28px;
+	line-height: 33.6px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	padding-top: 123px;
+	padding-bottom: 25px;
+}
+
+.guidesFlexbox {
+	display: flex;
+	width: var(--maxWidthContent);
+	margin: auto;
+	justify-content: space-around;
+}
+
+.guidesCard {
+	width: 528px;
+	height: 563.65px;
+	background-color: var(--graySectionBackgrounds);
+}
+
+.guidesCard img {
+	width: 528px;
+	height: 320px;
+}
+
+.guidesCardHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	padding: 52px 0 17.54px 48px;
+}
+
+.guidesCardSub {
+	margin: 0;
+	font-size: 16px;
+	line-height: 24px;
+	font-style: italic;
+	padding-left: 48px;
+}
+
+.guidesCard a {
+	color: var(--secondaryPurple);
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	font-style: italic;
+	padding-left: 48px;
+	margin-bottom: 43px;
+}
+
+/* Videos Section */
+
+.videosSection {
+	background-color: var(--graySectionBackgrounds);
+	width: var(--maxWidthWholePage);
+	margin: auto;
+	justify-content: space-around;
+	padding-bottom: 79.58px;
+}
+
+.videosTextHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 28px;
+	line-height: 36.4px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	padding-top: 97px;
+	padding-bottom: 4px;
+}
+
+.videosTextSub {
+	margin: 0;
+	font-size: 16px;
+	line-height: 24px;
+	font-style: italic;
+	padding-bottom: 58.4px;
+}
+
+.videosContainer {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+}
+
+.videosGrid {
+	display: inline-grid;
+	grid-template-columns: 519px 290px;
+	column-gap: 33px;
+	row-gap: 66px;
+}
+
+.videosBox {
+	width: 519px;
+	height: 145px;
+}
+
+.videoPreview {
+	width: 252px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	margin-right: 26px;
+	cursor: pointer;
+}
+
+.videoThumbnail {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	filter: brightness(0.75);
+}
+
+.videoPlayIcon {
+	position: absolute;
+	z-index: 1;
+}
+
+.videoBoxTextHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 16px;
+	line-height: 21.79px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	padding-bottom: 6px;
+}
+.videoBoxTextSub {
+	margin: 0;
+	font-size: 16px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+
+
+/* --- References Section --- */
+
+.references {
+	background-color: var(--graySectionBackgrounds);
+	width: var(--maxWidthWholePage);
+	height: 106px;
+	margin: 6px auto auto auto;
+}
+
+.referencesContainer {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.referencesTextHeader {
+	color: var(--primaryBlue);
+	margin: 0;
+	font-size: 24px;
+	line-height: 28.8px;
+	letter-spacing: 0.5px;
+	font-style: italic;
+	height: 53.22px;
+	padding-left: 20px;
+}
+
+.referencesButton {
+	cursor: pointer;
+}
+
+
+
+/* --- Footer --- */
+
+.pageFooter {
+	width: var(--maxWidthWholePage);
+	background-color: var(--primaryBlue);
+	color: white;
+	margin: auto;
+	padding-top: 106.32px;
+	font-family: Open Sans;
+	font-size: 14px;
+}
+
+.pageFooterContainer {
+	max-width: var(--maxWidthContent);
+	margin: auto;
+	height: 100%;
+}
+
+.pageFooterLogo {
+	position: absolute;
+}
+
+.pageFooterCopyright {
+	font-style: italic;
+	line-height: 25px;
+	text-align: right;
+	padding-top: 52.39px;
+}
+
+.pageFooterCorporateSite {
+	font-style: italic;
+	line-height: 28px;
+	text-align: right;
+	text-decoration: underline;
+	color: white;
+	float: right;
+	display: inline-block;
+	margin-top: -3px;
+}
+
+.pageFooterLinks {
+	width: var(--maxWidthContent);
+	text-align: center;
+	padding-bottom: 53.38px;
+}
+
+.pageFooterLinks a {
+	color: white;
+	padding: 0 10px;
+}
+
+
+
+/* --- Video Modal --- */
+.videoModal {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.videoModalContent {
+	position: absolute;
+	height: 80%;
+}
+
+.videoModalContent video {
+	width: 100%;
+	height: 100%;
+}
+
+.videoModalExitButton {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.videoModalExitBackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: -1;
+}
