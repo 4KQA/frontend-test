@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+
+
+/* Topbar - logo */
+.topbar{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.topcontent{
+    display: flex;
+}
+
+.logo{
+    margin-right: 100px;
+    margin-left: 150px;
+}
+
+#derma{
+    /* font-family: salin medium; */
+    font-weight: bold;
+
+}
+
+#world{
+    font-family: 'EB Garamond', serif;
+    color: #575757;
+    font-weight: 500;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: underline #C7E3DD 4px;
+}
+
+#leopharma{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#by{
+    font-weight: 250;
+    
+}
+#byLeopharma-text{
+    margin-top: -4px;
+}
+
+/* Topbar - Searchbar */
+
+.searchfield{
+    width: 350px;
+    padding: 12px 24px;
+    font-size: 14px;
+    color: #575757;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #787876;
+}
+
+.searchbarfield{
+    margin-right: -100px;
+}
+
+.search_button{
+    float: right;
+    margin-right: -20px;
+    margin-top: -39px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+/* Navbar */
+/* Section1 */
+.container_section1{
+    width: 100%;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+.adtralza{
+    height: 10%;
+    width: 10%;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+
+.section1_image {
+    background-image: url("/images/IVA-Cover-ohne-retuschiert\ 1.png");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .section1_text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 50px;
+    margin-top: 75px;
+    transform: translate(-50%, -50%);
+    color: white;
+ font-family: 'Open Sans', sans-serif;
+ font-style: italic;
+    
+  }
+
+  /* Section 2 */
+
+ .container_section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+ }
+  
+  .package{
+    width: 445.25px;
+    height: 351.4px;
+    margin-left: 200px;
+    padding-top: 100px;
+}
+
+.section2text{
+    margin-top: 130px;
+    color: #00609C;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+
+}
+
+.section2text2{
+    color: black;
+    line-height: 150%;;
+
+}
+
+/* Section3 */
+.container_section3{
+    padding-top: 100px;
+}
+
+.section3content{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    flex-basis: 40px;
+}
+
+
+.improvementsphoto, .safetyphoto{
+    display: flex;
+    justify-content: center;
+}
+
+.improvementstext, .safetytext, .longtermtext{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+.groupcheck-image, .grouphaand-image, .groupnine-image{
+    width: 180px;
+    height: 180px;
+    
+
+}
+
+.section3_overskrift{
+    color: #00609C;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-align: center;
+}
+
+.section3_underoverskrift{
+    color: black;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-align: center;
+   
+    
+}
+
+.linktext{
+    color: #C017A2;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-align: center;
+}
+
+.linkbutton{
+    border: none;
+    color: #C017A2;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-align: center;
+}
+
+.linkbutton:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease 0s;
+}
+
+/* Section 4 */
+.container_section4{
+    padding-top: 100px;
+}
+
+.section4content{
+    display: flex;
+}
+
+.section4_overskrift{
+    display: flex;
+    justify-content: center;
+    color: #00609C;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.section4_midterindhold{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.venstreindhold, .hoejreindhold{
+
+    display: flex;
+    gap: 20px;
+}
+
+.kemi-billede{
+    height: 400.5px;
+width: 712px;
+}
+
+.section4_broedtekst{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: black;
+    line-height: 30px;
+    padding-right: 50px;
+}
+
+.section4_videoknap{
+    background-color: #C017A2;
+    border: none;
+    width: 500px;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: italic;
+    margin-top: 38px;
+    margin-bottom: 5px;
+}
+
+.duration-time-text{
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+/* Section 5 */
+.container_section5{
+    padding-top: 100px;
+    
+}
+
+.section5title{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #00609C;
+    font-family: 'Open Sans';
+    font-style: italic;
+    
+}
+
+.content5{
+    display: flex;
+    padding: 100px;
+    padding-top: 0px; 
+    margin-top: 50px;
+    column-gap: 150px;
+}
+.nurse-image, .injection-image{
+    height: 320px;
+    width: 528px;
+    
+}
+
+.first-text{
+    margin-top: 25px;
+    color: #00609C;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.second-text{
+    color: black;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+    padding-right: 100px;
+}
+
+.third-text{
+    color: #C017A2;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-style: italic;
+
+}
+
+.third-text-button{
+    border: none;
+    text-align: left;
+}
+
+.third-text-button:hover{
+
+    transform: translateY(-10px);
+    transition: all 0.3s ease 0s;
+    
+}
+
+/* Section6 */
+.container_section6{
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px; 
+}
+.overskrift_section6{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: #00609C;
+}
+.underoverskrift_section6{
+    color: black;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+}
+
+.videotitle{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: #00609C;
+}
+
+.videodescription{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: black;
+}
+
+
+.play-image{
+    height: 49px;
+    width: 49px;
+}
+
+.play-button{
+    border: none;
+
+    
+}
+
+.play-image:hover{
+
+    transform: translateY(-10px);
+    transition: all 0.3s ease 0s;
+}
+
+.videocontent, .videocontent2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+.video-row1-col1, .video-row2-col1{
+    display: flex;
+    flex-direction: row;
+}
+.video-row1-col2, .video-row2-col2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.video-col1-1, .video-col2-1, .video2-col1-1, .video2-col2-1{
+    display: flex;
+    justify-content: center;
+}
+
+/* Reference section */
+.container_reference{
+    margin-top: 150px;
+    background-color: #E6E7E8;
+}
+
+.reference_button_section{
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.openreference_button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00609C;
+
+}
+
+.arrowdown-image{
+    height: 30px;
+width: 30px;
+color: white;
+}
+
+/* .arrowdown-image:active{
+    rotate: -90deg;
+} */
+
+.references-text{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: #00609C;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#reference_content{
+    display: none;
+}
+
+/* Referencerne */
+
+.reference-content-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.reference{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+}
+
+.ratingstars{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-right: 200px;
+    margin-top: 20px;
+}
+
+.citat{
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: black;
+}
+
+.quote, .fa-star{
+    color: #00609C;
+}
+
+.name{
+    color: #C017A2;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.logo-image{
+    width: 125px;
+    height: 125px;
+}
+
+/* Responsivt reference-sektion */
+  @media (max-width: 390px) {
+    .reference-content-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .reference{
+       display: flex;
+       flex-direction: column;
+    
+    }
+
+    .reference_button_section{
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .references-text{
+        display: none;
+    }
+  }
+
+/* Footer */
+.container_footer{
+    background-color: #00609C;
+}
+
+.leologo-image{
+    height: 91px;
+    width: 91px;
+}
+
+.footer-content-row1{
+    
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-content-row2{
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+
+}
+
+.footerlinks{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: regular;
+    cursor: pointer;
+
+}
+
+.contact-link:hover, .conditions-link:hover, .privacy-link:hover, .cookie-link:hover{
+    color: rgb(89, 89, 84)
+}
+
+.copyright{
+    color: white;
+left: 1096px;
+top: 281px;
+display: flex;
+flex-direction: row;
+font-family: 'Open Sans';
+font-style: italic;
+
+}
