@@ -1,0 +1,227 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img{
+  width:100%;
+}
+
+p{
+  color: #000;
+  font-size: 14pt;
+  padding:4% 0;
+  font-weight: 200;
+}
+
+a{
+  text-decoration: none;
+  color:#C017A2;
+  font-size: 14pt;
+  font-weight: 200;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:#00609C;
+  font-weight: 200;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x:hidden;
+}
+
+/*HEADER*/
+.search input{
+  width:30em;
+  padding:1.5em;
+  border-radius: 5em;
+  border:1px rgb(177, 177, 177) solid;
+  text-transform: uppercase;
+ 
+}
+
+header{
+  display:flex;
+  flex-direction: column;
+
+  padding:2em 10em;
+  
+
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:2em 4em;
+}
+
+.nav-top-level{
+  display:flex;
+  justify-content: space-evenly;
+  font-size: 1.3em;
+
+  margin-right:25em;
+  margin-top:2em;
+
+}
+
+
+
+/*PICTURE W TEXT*/
+
+.bg-pic > img {
+  position:relative;
+  width:100%;
+}
+
+.info-sec{
+  margin-left:14em;
+}
+
+.pic-w-txt h2 {
+  position:absolute;
+  width:35%;
+  color: #fff;
+
+  bottom:11em;
+  font-weight: 100;
+  font-size: 28pt;
+
+}
+
+.logo-pic {
+  width:8%;
+  position:absolute;
+  bottom:40em;
+
+}
+
+/*PRODUCT*/
+.product-sec{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding:2em;
+  background-color: #EEEEEE;
+  
+}
+
+.product-sec img {
+  width:38%;
+}
+
+.product-txt{
+  word-wrap: break-word;
+  width:40%;
+  margin-inline: 5em;
+}
+
+.product-txt h2{
+  font-size: 30pt;
+  font-weight:lighter;
+}
+
+.product-txt p {
+  font-size: 18pt;
+  font-weight: 200;
+  padding-top:2em;
+  font-style: italic;
+}
+
+/*Bubblessss*/
+.bub-card-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width:100%;
+
+}
+
+
+.bub-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  
+  text-align: center;
+
+  min-height: 35em;
+  margin: 4%;
+  padding-inline: 3%;
+
+  font-style: italic;
+ 
+}
+
+.bub-txt-container h3{
+  font-size: 20pt;
+  text-align: center;
+}
+
+.bub-img{
+  width:80%;
+}
+
+/*FOOTER*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #00609C;
+  height:30em;
+  width:100%;
+
+  
+
+}
+
+.f-txt-copy{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width:150%;
+}
+
+.f-copy{
+  width:10%;
+  text-align: right;
+  color:#fff;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 12pt;
+}
+
+.leo-logo{
+  width:4%;
+  
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:2%;
+
+  width:50em;
+
+  list-style-type: none;
+  color:rgb(213, 211, 211);
+}
+
+footer hr{
+  border: 1px solid rgb(213, 211, 211);
+}
