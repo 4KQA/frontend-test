@@ -10,16 +10,19 @@ img{
 
 p{
   color: #000;
-  font-size: 14pt;
+  font-size: 12pt;
   padding:4% 0;
   font-weight: 200;
 }
 
 a{
   text-decoration: none;
-  color:#C017A2;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: 200;
+}
+
+.pinkLink{
+  color:#C017A2;
 }
 
 a:hover{
@@ -38,8 +41,8 @@ body{
 
 /*HEADER*/
 .search input{
-  width:30em;
-  padding:1.5em;
+  width:25em;
+  padding:1.1em;
   border-radius: 5em;
   border:1px rgb(177, 177, 177) solid;
   text-transform: uppercase;
@@ -51,7 +54,6 @@ header{
   flex-direction: column;
 
   padding:2em 10em;
-  
 
 }
 
@@ -65,11 +67,26 @@ header{
 .nav-top-level{
   display:flex;
   justify-content: space-evenly;
-  font-size: 1.3em;
+  font-size: 1em;
 
-  margin-right:25em;
   margin-top:2em;
 
+  overflow: hidden;
+
+}
+
+.navLink{
+  color:#000;
+  text-decoration: none;
+}
+
+.navLink:hover{
+  text-decoration: underline;
+}
+
+.navLink:active{
+  font-style: italic;
+  text-decoration: none;
 }
 
 
@@ -82,24 +99,24 @@ header{
 }
 
 .info-sec{
-  margin-left:14em;
+  margin-left:12em;
 }
 
 .pic-w-txt h2 {
   position:absolute;
-  width:35%;
+  width:30%;
   color: #fff;
 
   bottom:11em;
   font-weight: 100;
-  font-size: 28pt;
+  font-size: 18pt;
 
 }
 
 .logo-pic {
   width:8%;
   position:absolute;
-  bottom:40em;
+  bottom:25em;
 
 }
 
@@ -110,7 +127,7 @@ header{
   align-items: center;
   justify-content: center;
 
-  padding:2em;
+  padding:5em;
   background-color: #EEEEEE;
   
 }
@@ -126,12 +143,12 @@ header{
 }
 
 .product-txt h2{
-  font-size: 30pt;
+  font-size: 24pt;
   font-weight:lighter;
 }
 
 .product-txt p {
-  font-size: 18pt;
+  font-size: 14pt;
   font-weight: 200;
   padding-top:2em;
   font-style: italic;
@@ -158,8 +175,8 @@ header{
   text-align: center;
 
   min-height: 35em;
-  margin: 4%;
-  padding-inline: 3%;
+  margin: 8%;
+
 
   font-style: italic;
  
@@ -181,7 +198,7 @@ footer{
   flex-direction: column;
 
   background-color: #00609C;
-  height:30em;
+  height:20em;
   width:100%;
 
   
@@ -193,11 +210,11 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width:150%;
+  width:120%;
 }
 
 .f-copy{
-  width:10%;
+  width:20%;
   text-align: right;
   color:#fff;
   font-style: italic;
@@ -214,7 +231,7 @@ footer ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding:2%;
+  padding:3%;
 
   width:50em;
 

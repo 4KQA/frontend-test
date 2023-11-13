@@ -5,22 +5,17 @@ import Derma from "../assets/logo/DermaWorld.png"
 
 import SearchIcon from '@mui/icons-material/Search';
 
-//import '../App.css'
+import '../App.css'
 
-
+//import { menuItem1 } from "./menuItems";
+import { Dropdown } from "./dropdown";
+import { menuItem1 } from "./menuItems";
 
 export default function Header() {
-    const linkStyle = {
-        color: "black",
-        textDecoration: "none",
 
-
-    }
     //TODO: if-else statement der læser om musen er over eller ej så link ikke får pink farve
-    const linkStyleHover = {
-        color: "black",
-        textDecoration: "underline",
-    }
+
+
 
     return (
         <header>
@@ -45,11 +40,21 @@ export default function Header() {
 
             <nav className="nav-top-level">
 
-                <Link onMouseOut={linkStyle} onMouseOver={linkStyleHover}>Bedingungen</Link>
-                <Link onMouseOut={linkStyle} onMouseOver={linkStyleHover}>Behandlungen</Link>
-                <Link onMouseOut={linkStyle} onMouseOver={linkStyleHover}>Veranstaltungen</Link>
-                <Link onMouseOut={linkStyle} onMouseOver={linkStyleHover}>Werkzeuge</Link>
-                <Link onMouseOut={linkStyle} onMouseOver={linkStyleHover}>Forschung und Erkenntnisse</Link>
+                <Link className="navLink">Bedingungen</Link>
+
+
+                <Link className="navLink dropBtn" onClick={Dropdown}>Behandlungen</Link>
+
+
+                <Link className="navbar-item">
+
+                    <Dropdown menuItems={menuItem1} />
+
+                </Link>
+
+                <Link className="navLink">Veranstaltungen</Link>
+                <Link className="navLink">Werkzeuge</Link>
+                <Link className="navLink">Forschung und Erkenntnisse</Link>
 
             </nav>
 

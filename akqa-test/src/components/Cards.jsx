@@ -9,7 +9,7 @@ export function BubbleCard(props) {
                     <h3>{props.title}</h3>
                     <p>{props.descrip}</p>
                 </div>
-                <a href="#" onClick={() => alert(`You have clicked on ${props.link}`)}>{props.link}</a>
+                <a href="#" onClick={() => alert(`You have clicked on ${props.link}`)} className='pinkLink'>{props.link}</a>
             </div>
         </>
 

@@ -2,15 +2,6 @@ export const menuItem1 = [
     {
         id:1,
         title: "Adtralza",
-
-        item1: "Overview",
-        item2: "Mode of Action",
-        item3: "Efficacy",
-        item4: "Quality of Life",
-        item5: "Safety",
-        item6: "Dosing",
-        item7: "News",
-        item8: "Technical Information",
     },
     {
         id:2,
@@ -49,4 +40,13 @@ export const menuItem1 = [
         title: "Xamiol",
     }
 ]
+
+/*        item1: "Overview",
+        item2: "Mode of Action",
+        item3: "Efficacy",
+        item4: "Quality of Life",
+        item5: "Safety",
+        item6: "Dosing",
+        item7: "News",
+        item8: "Technical Information", */
 
