@@ -1,52 +1,153 @@
-export const menuItem1 = [
-    {
-        id:1,
-        title: "Adtralza",
-    },
-    {
-        id:2,
-        title: "Diavonex",
-    },
-    {
-        id:3,
-        title: "Diavobet",
-    },
-    {
-        id:4,
-        title: "Enstilar",
-    },
-    {
-        id:5,
-        title: "Fucidin",
-    },
-    {
-        id:6,
-        title: "Kyntheum",
-    },
-    {
-        id:7,
-        title: "Protopic",
-    },
-    {
-        id:8,
-        title: "Skinoren",
-    },
-    {
-        id:9,
-        title: "Tralokinumab",
-    },
-    {
-        id:10,
-        title: "Xamiol",
-    }
-]
+import MenuItem from "./dropdown"
+import '../App.css'
 
-/*        item1: "Overview",
-        item2: "Mode of Action",
-        item3: "Efficacy",
-        item4: "Quality of Life",
-        item5: "Safety",
-        item6: "Dosing",
-        item7: "News",
-        item8: "Technical Information", */
+export default function NavLinks() {
+    const menuItems = [
+        {
+            label: "Bedingungen",
+            link: "#",
+            children: [
+                {
+                    label: "Item1",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                }
+            ]
+        },
+        {
+            label: "Behandlungen",
+            link: "#",
+            children: [
+                {
+                    label: "Adtralza",
+                    link: "#",
+                    children: [
+                        { label: 'Overview', link: "#" },
+                        { label: 'Mode of Action', link: "#" },
+                        { label: 'Efficacy', link: "#" },
+                        { label: 'Quality of Life', link: "#" },
+                        { label: 'Safety', link: "#" },
+                        { label: 'Dosing', link: "#" },
+                        { label: 'News', link: "#" },
+                        { label: 'Technical information', link: "#" },
+                    ]
+                },
+                {
+                    label: "Diavonex",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Diavobet",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Enstilar",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Fucidin",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Kyntheum",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Protopic",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Skinoren",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Tralokiumab",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+                {
+                    label: "Xamiol",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                },
+            ]
+        },
+        {
+            label: "Veranstaltung",
+            link: "#",
+            children: [
+                {
+                    label: "Item1",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                }
+            ]
+        },
+        {
+            label: "Werkzeuge",
+            link: "#",
+            children: [
+                {
+                    label: "Item1",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                }
+            ]
+        },
+        {
+            label: "Forschung und Erkenntnisse",
+            link: "#",
+            children: [
+                {
+                    label: "Item1",
+                    link: "#",
+                    children: [
+                        { label: 'Item2', link: "#" }
+                    ]
+                }
+            ]
+        },
+    ]
 
+return(
+    <nav>
+        <ul className="menu">
+            {menuItems.map((item, index) => (
+                <MenuItem key={index} item={item} />
+            ))}
+        </ul>
+    </nav>
+)
+
+}
