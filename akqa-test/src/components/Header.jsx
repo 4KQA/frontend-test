@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header>
             <div className="top">
-                <div style={{ width: "18%" }}><img src={Derma} alt="DermaWorld Logo" className="logo" /></div>
+                <a href="/" style={{ width: "18%" }}><img src={Derma} alt="DermaWorld Logo" className="logo" /></a>
                 <form className="search">
 
                     <input type="text" placeholder="Search" />
@@ -31,6 +31,7 @@ export default function Header() {
 
             <NavLinks/>
 
+            <div>{/* TODO: RESPONSIVE */}</div>
         </header>
     )
 }

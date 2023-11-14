@@ -1,139 +1,173 @@
 import MenuItem from "./dropdown"
 import '../App.css'
 
+import { useState } from "react"
+
 export default function NavLinks() {
+    const [activeSubMenu, setActiveSubMenu] = useState(null);
+
+    const handleSubMenuClick = (label) => {
+        setActiveSubMenu(activeSubMenu === label ? null : label)
+    }
+
     const menuItems = [
         {
+            id:1,
             label: "Bedingungen",
-            link: "#",
+            url:"#",
             children: [
                 {
-                    label: "Item1",
-                    link: "#",
+                    label: "Bedingungen_1",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Bedingungen_01'}
                     ]
-                }
+                },
+                {
+                    label: "Bedingungen_2",
+                    url:"#",
+                    children: [
+                        { label: 'Bedingungen_02'}
+                    ]
+                },
+                {
+                    label: "Bedingungen_3",
+                    url:"#",
+                    children: [
+                        { label: 'Bedingungen_03'}
+                    ]
+                },
             ]
         },
         {
+            id:2,
             label: "Behandlungen",
-            link: "#",
+            url:"#",
             children: [
                 {
                     label: "Adtralza",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Overview', link: "#" },
-                        { label: 'Mode of Action', link: "#" },
-                        { label: 'Efficacy', link: "#" },
-                        { label: 'Quality of Life', link: "#" },
-                        { label: 'Safety', link: "#" },
-                        { label: 'Dosing', link: "#" },
-                        { label: 'News', link: "#" },
-                        { label: 'Technical information', link: "#" },
+                        { label: 'Overview', url:"#" },
+                        { label: 'Mode of Action', url:"#" },
+                        { label: 'Efficacy', url:"#"},
+                        { label: 'Quality of Life', url:"#" },
+                        { label: 'Safety', url:"#" },
+                        { label: 'Dosing', url:"#" },
+                        { label: 'News', url:"#" },
+                        { label: 'Technical information', url:"#" },
                     ]
                 },
                 {
                     label: "Diavonex",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Diavonex_01', url:"#" }
                     ]
                 },
                 {
                     label: "Diavobet",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Diavobet_01', url:"#" }
                     ]
                 },
                 {
                     label: "Enstilar",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Enstilar_01', url:"#" }
                     ]
                 },
                 {
                     label: "Fucidin",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Fucidin_01', url:"#" }
                     ]
                 },
                 {
                     label: "Kyntheum",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Kyntheum_01', url:"#" }
                     ]
                 },
                 {
                     label: "Protopic",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Protopic_01', url:"#",}
                     ]
                 },
                 {
                     label: "Skinoren",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Skinoren_01', url:"#" }
                     ]
                 },
                 {
                     label: "Tralokiumab",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Tralokiumab_01', url:"#" }
                     ]
                 },
                 {
                     label: "Xamiol",
-                    link: "#",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Xamiol_01', url:"#" }
                     ]
                 },
             ]
         },
         {
+            id:3,
             label: "Veranstaltung",
-            link: "#",
+            url:"#",
             children: [
                 {
-                    label: "Item1",
-                    link: "#",
+                    label: "Veranstaltung_1",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Veranstaltunf_01', url:"#" },
+                        { label: 'Veranstaltunf_02', url:"#" }
                     ]
                 }
             ]
         },
         {
+            id:4,
             label: "Werkzeuge",
-            link: "#",
+            url:"#",
             children: [
                 {
-                    label: "Item1",
-                    link: "#",
+                    label: "Werkzeuge_1",
+                    url:"#",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Werkzeuge_01', url:"#" },
+                        { label: 'Werkzeuge_02', url:"#" },
+                        { label: 'Werkzeuge_03', url:"#" },
+                        { label: 'Werkzeuge_04', url:"#" },
                     ]
                 }
             ]
         },
         {
+            id:5,
             label: "Forschung und Erkenntnisse",
-            link: "#",
+            url:"#",
             children: [
                 {
-                    label: "Item1",
-                    link: "#",
+                    label: "Forschung und Erkenntnisse_1",
                     children: [
-                        { label: 'Item2', link: "#" }
+                        { label: 'Forshung und Erkenntnisse_01', url:"#" },
+                        { label: 'Forshung und Erkenntnisse_02', url:"#" },
+                        { label: 'Forshung und Erkenntnisse_03', url:"#" },
+                        { label: 'Forshung und Erkenntnisse_04', url:"#" },
+                        { label: 'Forshung und Erkenntnisse_05', url:"#" },
                     ]
                 }
             ]
@@ -142,11 +176,11 @@ export default function NavLinks() {
 
 return(
     <nav>
-        <ul className="menu">
+        <button className="menu">
             {menuItems.map((item, index) => (
-                <MenuItem key={index} item={item} />
+                <MenuItem key={index} item={item} onClick={handleSubMenuClick} />
             ))}
-        </ul>
+        </button>
     </nav>
 )
 

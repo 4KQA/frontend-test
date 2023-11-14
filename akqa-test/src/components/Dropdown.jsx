@@ -1,33 +1,26 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import '../App.css'
 
-export default function MenuItem({ item }) {
+export default function MenuItem({ item, onClick }) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleClick = () => {
-        setIsOpen(true)
-    };
-
-    const handleMouseLeave = () => {
-        setIsOpen(false)
-    };
+   const handleToggle = () => {
+    setIsOpen(!isOpen);
+    onClick(item.label);
+   }
 
     return (
-        <div
-            className="dropdown-items"
-            onClick={handleClick}
-            onMouseLeave={handleMouseLeave}
-        >
-            <Link to={item.link} className="navLink">{item.label}</Link>
+        <nav className="dropdown-items">
+            <button href="{item.url}" className="navLink" onClick={handleToggle}>{item.label}</button>
             {item.children && isOpen && (
-                <ul className="submenu">
+                <ul className={`submenu ${isOpen ? 'active' : ''}`} >
                     {item.children.map((child, index) => (
-                        <MenuItem key={index} item={child} />
+                        <MenuItem key={index} item={child} onClick={onclick} />
                     ))}
                 </ul>
             )}
-        </div>
+        </nav>
     )
 }
 
