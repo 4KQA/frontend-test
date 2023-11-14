@@ -1,3 +1,4 @@
+import '../Card.css'
 import '../App.css'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
@@ -32,7 +33,7 @@ export function DefaultCard(props){
 
 export function VideoCard(props){
     return(
-        <div>
+        <div className='vCard'>
             <div className='e-video'> {/*A video should go here instead of div*/}
                 <PlayCircleIcon/>
             </div> 

@@ -39,9 +39,8 @@ function App() {
 
           <img src={box} alt="Picture of Adtralza" />
           <div className='product-txt'>
-            <h2><i>It is the first and only biologic developed to specifically neutralize IL-13, a key driver of atopic dermatitis signs and symptoms(1,2)</i></h2>
-            <a href="/">Learn more aboyut how Adtralza&#174; works and how to use it in treatment.</a>
-
+            <h2>It is the first and only biologic developed to specifically neutralize IL-13, a key driver of atopic dermatitis signs and symptoms(1,2)</h2>
+            <a href="/" className="p-a">Learn more aboyut how Adtralza&#174; works and how to use it in treatment.</a>
           </div>
 
         </section>
@@ -70,23 +69,27 @@ function App() {
         </section>
 
         <section className='benefits'>
-          <h2>Adtralza&#174; neutralizes IL-13, a key driver of Atopic Dermatitis signs and symptoms.</h2>
-          <p>By specifically targeting the IL-13 cytokine, Adtralza® inhibits the interaction with type II receptors and prevents IL-13-induced inflammatory responses in the skin(1,2).</p>
-
-
-          <div className="b_list">
-            <p>Adtralza&#174; selectively modulates the dysregulated immune system by(1):</p>
-            <ul className="b_listItems">
-              <li>Reducing markers of skin inflammation</li>
-              <li>Improving markers of skin barrier integrity</li>
-              <li>Reducing epidermal thickness</li>
-            </ul>
+          <div className="b-description">
+            <h2>Adtralza&#174; neutralizes IL-13, a key driver of Atopic Dermatitis signs and symptoms.</h2>
+            <p>By specifically targeting the IL-13 cytokine, Adtralza® inhibits the interaction with type II receptors and prevents IL-13-induced inflammatory responses in the skin(1,2).</p>
           </div>
 
-          <div className="b_vid">
-            <img src={vidplaceholder} alt="Video to be displayed here, this is a placeholder."></img>
-            <input type="submit" placeholder="Watch the video" />
-            <small><i>Duration: 2:43</i></small>
+          <div className="b-container">
+            <div className="b-list">
+              <p>Adtralza&#174; selectively modulates the dysregulated immune system by(1):</p>
+              <ul className="b-listItems">
+                <li>- Reducing markers of skin inflammation</li>
+                <li>- Improving markers of skin barrier integrity</li>
+                <li>- Reducing epidermal thickness</li>
+              </ul>
+              <button placeholder="Watch the video" className="b-ctaBtn">Watch the video</button>
+              <small><p>Duration: 2:43</p></small>
+            </div>
+
+            <div className="b-vid">
+              <img src={vidplaceholder} alt="Video to be displayed here, this is a placeholder."></img>
+            </div>
+
           </div>
           {/*TODO: Section: heading, 2 sentences+3points, 1 CTA for video play + duration GREY BG*/}
         </section>
@@ -117,28 +120,28 @@ function App() {
           <h2>KOL Videos - get expert insights here</h2>
           <p>See what Key opinion leaders have to say about their experiences with Adtralza&#174;</p>
 
-            <article>
-              <div>
-                <VideoCard 
-                  title="Video title"
-                  descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-                />
-                <VideoCard 
-                  title="Video title"
-                  descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-                />
-              </div>
-              <div>
-              <VideoCard 
-                  title="Video title"
-                  descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-                />
-                <VideoCard 
-                  title="Video title"
-                  descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-                />
-              </div>
-            </article>
+          <article>
+            <div>
+              <VideoCard
+                title="Video title"
+                descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+              />
+              <VideoCard
+                title="Video title"
+                descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+              />
+            </div>
+            <div>
+              <VideoCard
+                title="Video title"
+                descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+              />
+              <VideoCard
+                title="Video title"
+                descrip="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+              />
+            </div>
+          </article>
 
 
           {/*TODO: Section: heading, subtitle, 2 rows, 4 vids on left side with text on right side – grid, stacked 2x2 – dropdown? references GREY BG*/}

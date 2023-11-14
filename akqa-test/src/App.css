@@ -5,10 +5,10 @@
 
 }
 
-:root{
+:root {
   /* Primære farver */
   --primaryC: #00609C;
-  --secondaryC: #C017A2; 
+  --secondaryC: #C017A2;
   --darkB: #091523;
   --w: #FFFFFF;
   --b: #000000;
@@ -19,34 +19,49 @@
 
   /* Skrifttype */
   --primaryFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --secondaryFont:Georgia, 'Times New Roman', Times, serif;
+  --secondaryFont: Georgia, 'Times New Roman', Times, serif;
 
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
-section:nth-child(even){
-background-color: var(--bgGreyColor);
+section:nth-child(even) {
+  background-color: var(--bgGreyColor);
 }
 
 
-p{
+p {
   font-family: var(--primaryFont);
   color: var(--b);
   font-size: 12pt;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.15;
-  padding:4% 0;
+  padding: 4% 0;
   letter-spacing: .5px;
 
 }
 
-main{
+li {
+  font-family: var(--primaryFont);
+  color: var(--bgGreyColor);
+  font-size: 12pt;
+  font-weight: 100;
+  letter-spacing: .5px;
+  list-style-type: none;
+}
+
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: var(--w);
   font-family: var(--secondaryFont);
   font-style: italic;
+
+}
+
+body {
+  width: 100vw;
+  height: auto;
 }
 
 /*----------------------------------------------------*/
@@ -73,13 +88,11 @@ a:hover {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--primaryFont);
   color: var(--primaryC);
-  font-weight: 200;
+  font-weight: lighter;
+  font-size: 2em;
 }
 
 /*HEADER*/
@@ -95,11 +108,9 @@ h6 {
 header {
   display: flex;
   flex-direction: column;
-  width:100%;
+  width: 100%;
 
   padding: 2em 10em;
-
-
 }
 
 .top {
@@ -110,12 +121,12 @@ header {
 
 }
 
-.navLink{
+.navLink {
   text-decoration: none;
   display: block;
   padding: .5em;
   text-align: center;
-  
+
   border: none;
   outline: none;
   background-color: transparent;
@@ -132,7 +143,7 @@ header {
   text-decoration: none;
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2em;
@@ -195,10 +206,10 @@ header {
   margin-left: 12em;
 }
 
-.pic-w-txt{
+.pic-w-txt {
   z-index: 1;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .info-sec h2 {
@@ -208,7 +219,7 @@ header {
 
   top: 13em;
   font-weight: 100;
-  font-size: 24pt;
+
 
 }
 
@@ -231,7 +242,7 @@ header {
 }
 
 .product-sec img {
-  width: 38%;
+  width: 30%;
 }
 
 .product-txt {
@@ -240,56 +251,76 @@ header {
   margin-inline: 5em;
 }
 
-
-.product-txt h2 {
-  font-size: 24pt;
-  font-weight: lighter;
-  margin-bottom: 8%;
-}
-
 .product-txt a {
   font-size: 14pt;
   font-weight: 200;
-  font-style: italic;
   color: var(--b);
+
+  position: relative;
+  top: 2em;
 }
 
-/*Bubblessss*/
-.bub-card-container {
+
+
+/*BENEFITS SEC*/
+.benefits {
+  width: 100%;
+  padding: 5% 10%;
+}
+
+.b-description {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.b-description p {
+  width: 50em;
+  word-wrap: break-word;
+}
+
+.b-vid {
+  width: 70%;
+}
+
+.b-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-
-  width: 100%;
-
 }
 
-
-.bub-card-content {
+.b-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-
-  text-align: center;
-
-  min-height: 35em;
-  margin: 6%;
-
-
-  font-style: italic;
-
 }
 
-.bub-txt-container h3 {
-  font-size: 20pt;
-  text-align: center;
+.b-listItems li {
+  color: var(--b)
 }
 
-.bub-img {
-  width: 80%;
+.b-ctaBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 1em;
+  
+  padding: 5px;
+  margin-top: 8em;
+  background-color: var(--secondaryC);
+  color: var(--w);
+  font-weight: 200;
+
+  border: 1px solid var(--secondaryC);
+  border-radius: 100px;
+
+  transition: ease .3s;
 }
+
+.b-ctaBtn:hover {
+  background-color: transparent;
+  color: var(--secondaryC);
+  cursor: pointer;
+}
+
+
+
 
 /*FOOTER*/
 footer {
@@ -298,10 +329,10 @@ footer {
   flex-direction: column;
 
   background-color: var(--primaryC);
-  height: 20em;
+  height: 25em;
   width: 100%;
 
-
+  padding: 5%;
 
 }
 
@@ -309,29 +340,32 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  width: 120%;
+  justify-content: space-between;
+  width: 80%;
+
 }
 
 .f-copy {
-  width: 20%;
   text-align: right;
-  color: #fff;
+  color: var(--w);
   font-style: italic;
   line-height: 1.5;
-  font-size: 12pt;
+  font-size: 10pt;
+  font-weight: lighter;
+
+  width: 20%;
+
 }
 
 .leo-logo {
-  width: 4%;
-
+  width: 8%;
 }
 
-footer ul {
+.f-legals {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 3%;
+  padding: 10% 0 0 0;
 
   width: 50em;
 
@@ -340,9 +374,9 @@ footer ul {
 
   font-family: var(--primaryFont);
   font-weight: 200;
+  font-size: 10pt;
 }
 
 footer hr {
-  border: 1px solid rgb(213, 211, 211);
+  border: .3px solid rgb(213, 211, 211);
 }
-
