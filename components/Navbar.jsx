@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   return (
     <>
-      <div className=" bg-slate-100 h-12 z-50">
+      <div className=" bg-slate-100 h-12">
         <div className="flex flex-row justify-center gap-x-16 text-xl font-lato pt-2 ">
           <Link
             className="pb-3"

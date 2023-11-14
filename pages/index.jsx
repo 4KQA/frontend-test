@@ -6,6 +6,7 @@ import AdtralzaSection from "@/components/sections/AdtralzaSection";
 import InfoSection from "@/components/sections/InfoSection";
 import VideoSection from "@/components/sections/VideoSection";
 import BoxSection from "@/components/sections/BoxSection";
+import Footer from "@/components/Footer";
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       <InfoSection />
       <VideoSection />
       <BoxSection />
+      <Footer />
     </div>
   );
 };
