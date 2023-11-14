@@ -1,10 +1,9 @@
 import React from "react";
 
 import "./App.css";
-
-import Navigation from "./components/Navigation";
-import Header from "./components/Header";
-import Product from "./components/Product";
+import Header from "./sections/Header";
+import Navigation from "./sections/Navigation";
+import Product from "./sections/Product";
 
 function App() {
   return (
