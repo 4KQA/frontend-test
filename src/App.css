@@ -27,11 +27,20 @@ h3 {
   font-weight: 100;
 }
 
+h7 {
+  font-size: 0.8vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1vw;
   color: #2a2a2a;
   font-weight: 100;
+  line-height: 3vh;
+  font-style: italic;
 }
 
 li {
@@ -43,6 +52,7 @@ a {
   text-decoration: none;
   color: #2a2a2a;
   font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* HEADER */
@@ -241,4 +251,123 @@ a {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 100;
+}
+
+/*================ HOW IT WORKS =================*/
+.howItWorks {
+  background-color: #e6e7e8;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.howItWorks h2 {
+  color: #00609c;
+  padding-bottom: 5%;
+}
+
+.watchBtn {
+  width: 15vw;
+  margin-top: 12%;
+  margin-bottom: 2%;
+
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #f9f9f9;
+  background-color: #c017a2;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.howItWorksFlex {
+  display: flex;
+}
+
+.howItWorksText {
+  width: 50%;
+}
+
+.howItWorksText p {
+  width: 85%;
+  padding-bottom: 3%;
+}
+
+.howItWorksVideo {
+  width: 50%;
+}
+
+/*================== CLINICAL TOOLS ====================*/
+.clinicalTools {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.clinicalTools h2 {
+  padding-bottom: 2%;
+  color: #00609c;
+}
+
+.infoCard {
+  width: 48%;
+  background-color: #e6e7e8;
+}
+
+.infoCard p {
+  padding-bottom: 8%;
+}
+
+.infoCard a {
+  color: #c017a2;
+  font-style: italic;
+}
+
+.cardContent {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.cardFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*================== KOL VIDEOS ====================*/
+.videoCard {
+  display: flex;
+  width: 50%;
+}
+
+.videoPlaceholder {
+  width: 50%;
+}
+
+.videoText {
+  padding-left: 4%;
+  width: 50%;
+}
+
+.videoFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playBtn {
+  color: #c017a2;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  margin-left: 8.5%;
+  margin-top: 4%;
+}
+
+.KOLVideo {
+  width: 100%;
 }
