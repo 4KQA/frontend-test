@@ -1,13 +1,9 @@
-import TopBar from "./components/TopBar";
-// import PrimaryNavigation from "./components/PrimaryNavigation";
+import PrimaryNavigation from "./components/PrimaryNavigation";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-8">
-      <nav aria-label="Primary Navigation">
-        <TopBar/>
-        {/* <PrimaryNavigation /> */}
-      </nav>
+        <PrimaryNavigation/>
       <main>
         <h1>This is h1</h1>
         <h2>This is h2</h2>
