@@ -117,7 +117,7 @@ export default function Product() {
             <p>— Reducing epidermal thickness</p>
             <button className="watchBtn">Watch the video</button>
             <br />
-            <h7>Duration: 2:43</h7>
+            <p className="videoDuration">Duration: 2:43</p>
           </div>
           <div className="howItWorksVideo">
             <img src={molecule} alt="Placeholder for video" />
@@ -145,37 +145,39 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="KOL fixedMargin">
-        <h2>KOL Videos - get expert insights here</h2>
-        <p>
-          See what Key opinion leaders have to say about their experiences with
-          Adtralza®
-        </p>
-        <div className="videoFlex">
-          <VideoCard
-            placeholderSrc={molecule}
-            videoSrc={"#"}
-            title="Video title"
-            text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-          />
-          <VideoCard
-            placeholderSrc={molecule}
-            videoSrc={"#"}
-            title="Video title"
-            text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-          />
-          <VideoCard
-            placeholderSrc={molecule}
-            videoSrc={"#"}
-            title="Video title"
-            text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-          />
-          <VideoCard
-            placeholderSrc={molecule}
-            videoSrc={"#"}
-            title="Video title"
-            text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
-          />
+      <div className="KOL">
+        <div className="fixedMargin">
+          <h2>KOL Videos - get expert insights here</h2>
+          <p>
+            See what Key opinion leaders have to say about their experiences
+            with Adtralza®
+          </p>
+          <div className="videoFlex">
+            <VideoCard
+              placeholderSrc={molecule}
+              videoSrc={"#"}
+              title="Video title"
+              text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+            />
+            <VideoCard
+              placeholderSrc={molecule}
+              videoSrc={"#"}
+              title="Video title"
+              text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+            />
+            <VideoCard
+              placeholderSrc={molecule}
+              videoSrc={"#"}
+              title="Video title"
+              text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+            />
+            <VideoCard
+              placeholderSrc={molecule}
+              videoSrc={"#"}
+              title="Video title"
+              text="Short description of the contents or subject of the video.  You can upload a screen from the video as thumbnail image"
+            />
+          </div>
         </div>
       </div>
     </div>

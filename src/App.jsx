@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./sections/Header";
 import Navigation from "./sections/Navigation";
 import Product from "./sections/Product";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Navigation />
       <Product />
+      <Footer />
     </>
   );
 }
