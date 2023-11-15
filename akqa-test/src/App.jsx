@@ -3,7 +3,6 @@ import './App.css'
 import Header from './components/header'
 import Footer from './components/Footer'
 
-
 //importering af billeder
 import adtralza from '../src/assets/adtralza.png'
 import box from '../src/assets/box.png'
@@ -20,7 +19,6 @@ function App() {
   return (
     <body>
       <Header />
-      {/*HEADER (WHITE BG) with dropdown menu1 (GREY BG, BLUE TEXT, UNDERLINED AT ACTIVE) and dropdown menu2 (BLUE BG, WHITE TEXT, UNDERLINED AT ACTIVE)*/}
 
       <main>
         <section className="pic-w-txt">
@@ -86,7 +84,6 @@ function App() {
             </div>
 
           </div>
-          {/*TODO: Section: heading, 2 sentences+3points, 1 CTA for video play + duration GREY BG*/}
         </section>
 
         <section className='tools'>
@@ -107,8 +104,6 @@ function App() {
               link="Watch the video"
             />
           </div>
-
-          {/*TODO: Section: heading, 2 cards w. pciture on top and text bottom WHITE BG*/}
         </section>
 
         <section className='expert-insight'>
@@ -137,32 +132,10 @@ function App() {
               />
             </div>
           </article>
-
-
-          {/*TODO: Section: heading, subtitle, 2 rows, 4 vids on left side with text on right side – grid, stacked 2x2 – dropdown? references GREY BG*/}
         </section>
       </main>
 
       <Footer />
-      {/*TODO: FOOTER: logo left, copyright right, 6 links bottom right with vertical divider BLUE BG*/}
-
-
-
-
-
-
-      {/*Full width picture with heading and paragraph on top*/}
-
-      {/*Section: picture left, heading+paragraph right GREY BG*/}
-
-      {/*Section: 3 columns = bubble, heading+paragraph+link, text aligned center WHITE BG*/}
-
-
-
-
-
-
-
 
     </body>
   )
