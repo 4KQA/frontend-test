@@ -5,7 +5,6 @@ import Footer from './components/Footer'
 
 
 //importering af billeder
-import fullW from '../src/assets/fullwidthpic.png'
 import adtralza from '../src/assets/adtralza.png'
 import box from '../src/assets/box.png'
 import number from '../src/assets/bobler/number.svg'
@@ -25,10 +24,6 @@ function App() {
 
       <main>
         <section className="pic-w-txt">
-          <div className='bg-pic'>
-            <img src={fullW} alt="Top picture" />
-          </div>
-
           <div className='info-sec'>
             <img src={adtralza} alt=".." className='logo-pic' />
             <h2>Adtralza&#174; is a new treatment for adult patients with moderate-to-severe atopic dermatitis (eczema) who are candidates for systemic therapy.</h2>

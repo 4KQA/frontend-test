@@ -105,6 +105,11 @@ h3
   border: 1px rgb(177, 177, 177) solid;
   text-transform: uppercase;
 
+  background: url(../src/assets/magnifying-glass-solid.svg) no-repeat;
+  background-position: center right 25px;
+  background-size: 6%;
+
+
 }
 
 header {
@@ -205,31 +210,30 @@ header {
 
 
 .info-sec {
-  margin-left: 12em;
+  padding:5% 14%;
+
 }
 
 .pic-w-txt {
-  z-index: 1;
+  position:relative;
   width: 100%;
-  height: 100%;
+  min-height: 400px;
+
+  background: url("../src/assets/fullwidthpic.png");
+  background-size: cover
+
 }
 
 .info-sec h2 {
-  position: absolute;
-  width: 38%;
+  width: 50%;
+  padding:2% 0;
   color: var(--w);
-
-  top: 13em;
   font-weight: 100;
-
-
+  line-height: 130%;
 }
 
 .logo-pic {
   width: 8%;
-  position: absolute;
-  bottom: 28em;
-
 }
 
 /*PRODUCT*/
