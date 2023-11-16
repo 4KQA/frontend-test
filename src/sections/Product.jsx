@@ -9,120 +9,79 @@ import scrubs from "../images/scrubs.svg";
 import injection from "../images/injection.svg";
 import Infocard from "../components/Infocard";
 import VideoCard from "../components/VideoCard";
+import ProductAd from "../components/ProductAd";
+import ProductResults from "../components/ProductResults";
+import ProductVideo from "../components/ProductVideo";
 
 export default function Product() {
   return (
     <div className="product">
-      <div className="productAd">
-        <img
-          src={hero}
-          alt="Woman in different stages of Adtralza treatment"
-          className="hero"
-        />
-        <div className="heroText fixedMargin">
-          <img src={adtralzaLogo} alt="Adtralza logo" className="productLogo" />
-
-          <h2 className="productAdText">
-            Adtralza® is a new treatment for adult patients with
+      <ProductAd
+        heroSrc={hero}
+        heroAlt={"Woman in different stages of Adtralza treatment"}
+        logoSrc={adtralzaLogo}
+        logoAlt={"Adtralza logo"}
+        heroText="Adtralza® is a new treatment for adult patients with
             moderate-to-severe atopic dermatitis (eczema) who are candidates for
-            systemic therapy.
-          </h2>
-        </div>
-      </div>
+            systemic therapy."
+        productSrc={adtralza}
+        productAlt={"One box of Adtralza"}
+        productText="It is the first and only biologic developed to specifically
+            neutralize IL-13, a key driver of atopic dermatitis signs and
+            symptoms(1,2)"
+        linkHref={"#"}
+        productName={"Adtralza"}
+      />
 
-      <div className="productPresentation">
-        <div className="productPackaging fixedMargin">
-          <img
-            src={adtralza}
-            alt="One package of Adtralza"
-            className="productBox"
-          />
-          <div className="productPackagingText">
-            <h2>
-              It is the first and only biologic developed to specifically
-              neutralize IL-13, a key driver of atopic dermatitis signs and
-              symptoms(1,2)
-            </h2>
-
-            <a href="#">
-              Learn more about how Adtralza® works and how to use it in
-              treatment.
-            </a>
-          </div>
-        </div>
-      </div>
       <div className="productResults fixedMargin">
-        <div className="resultsColumn">
-          <img src={nine} alt="9 out of 10 - in a circle - illustrated" />
-          <div className="resultsText">
-            <h3>Long term sustained improvement</h3>
-            <p>
-              9 out of 10 respondents experienced sustained disease control in
+        <ProductResults
+          imgSrc={nine}
+          altText={"9 out of 10 - in a circle - illustrated"}
+          heading={"Long term sustained improvement"}
+          text="9 out of 10 respondents experienced sustained disease control in
               clinical trials 10, providing sustained improvements in the burden
-              of disease(1,2, 1, 8*†‡).{" "}
-            </p>
-            <a href="#">See efficacy and trial data</a>
-          </div>
-        </div>
-        <div className="resultsColumn">
-          <img
-            src={burden}
-            alt="Heart floating over hand - in a circle - illustrated"
-          />
-          <div className="resultsText">
-            <h3>Improvements in the burden of disease</h3>
-            <p>
-              Patients in clinical trials saw an improvement in Quality of Life
+              of disease(1,2, 1, 8*†‡)."
+          linkHref={"/treatments/adtralza/efficacy"}
+          linkText={"See efficacy and trial data"}
+        />
+        <ProductResults
+          imgSrc={burden}
+          altText={"Heart floating over hand - in a circle - illustrated"}
+          heading={"Improvements in the burden of disease"}
+          text="Patients in clinical trials saw an improvement in Quality of Life
               with early symptom relief and sustained improvements in burden of
-              disease from week 16 to 32(12,13).
-            </p>
-            <a href="#">Learn more about quality of life improvements</a>
-          </div>
-        </div>
-        <div className="resultsColumn">
-          <img
-            src={safety}
-            alt="Shield with checkmark floating over hand - in a circle - illustrated"
-          />
-          <div className="resultsText">
-            <h3>Good safety profile</h3>
-            <p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-            </p>
-            <a href="#">See safety profile </a>
-          </div>
-        </div>
+              disease from week 16 to 32(12,13)."
+          linkHref={"/treatments/adtralza/quality"}
+          linkText={"Learn more about quality of life improvements"}
+        />
+        <ProductResults
+          imgSrc={safety}
+          altText={
+            "Shield with checkmark floating over hand - in a circle - illustrated"
+          }
+          heading={"Good safety profile"}
+          text=""
+          linkHref={"/treatments/adtralza/safety"}
+          linkText={"See safety profile"}
+        />
       </div>
 
       <div className="howItWorks">
-        <h2 className="fixedMargin">
-          Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
-          and symptoms.
-        </h2>
-        <div className="howItWorksFlex fixedMargin">
-          <div className="howItWorksText">
-            <p>
-              By specifically targeting the IL-13 cytokine, Adtralza® inhibits
-              the interaction with type II receptors and prevents IL-13-induced
-              inflammatory responses in the skin(1,2). Adtralza® selectively
-              modulates the dysregulated immune system by(1):
-            </p>
-            <p>— Reducing markers of skin inflammation</p>
-            <p>— Improving markers of skin barrier integrity</p>
-            <p>— Reducing epidermal thickness</p>
-            <button className="watchBtn">Watch the video</button>
-            <br />
-            <p className="videoDuration">Duration: 2:43</p>
-          </div>
-          <div className="howItWorksVideo">
-            <img src={molecule} alt="Placeholder for video" />
-          </div>
-        </div>
+        <ProductVideo
+          heading="Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
+          and symptoms."
+          text="By specifically targeting the IL-13 cytokine, Adtralza® inhibits
+          the interaction with type II receptors and prevents IL-13-induced
+          inflammatory responses in the skin(1,2). Adtralza® selectively
+          modulates the dysregulated immune system by(1):"
+          point1={"Reducing markers of skin inflammation"}
+          point2={"Improving markers of skin barrier integrity"}
+          point3={"Reducing epidermal thickness"}
+          duration={"2:43"}
+          placeholderSrc={molecule}
+          altText={"Placeholder for video"}
+          videoSrc={"#"}
+        />
       </div>
 
       <div className="clinicalTools fixedMargin">
@@ -132,7 +91,7 @@ export default function Product() {
             imageSrc={scrubs}
             heading="Dosing guide"
             text="Adtralza® has a straightforward dosing regimen, with 150 mg prefilled syringes(1). "
-            linkHref="#"
+            linkHref="/treatments/adtralza/dosing"
             linkText="Learn more about application and dosing"
           />
           <Infocard

@@ -1,102 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Search from "../components/Search";
 
 export default function Navigation() {
   return (
     <nav className="navbar">
-      <ul className="menu fixedMargin">
-        <li className="menuItem">
-          <NavLink to="/conditions">Conditions</NavLink>
-        </li>
-        <li className="withSubNav">
-          <NavLink to="/treatments">
-            Treatments
-            <div className="subNav">
-              <ul>
-                <li className="productOverview">
-                  <NavLink to="/treatments/adtralza">
-                    Adtralza
-                    <div className="productInfo">
-                      <ul>
-                        <li>
-                          <NavLink to="/treatments/adtralza/overview">
-                            Overview
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/mode">
-                            Mode of Action
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/efficacy">Efficacy</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/quality">
-                            Quality of Life
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/safety">Safety</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/dosing">Dosing</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/news">News</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/treatments/information">
-                            Technical Information
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </div>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/diavonex">Diavonex</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/diavobet">Diavobet</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/enstilar">Enstilar</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/fucidin">Fucidin</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/kyntheum">Kyntheum</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/protopic">Protopic</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/skinoren">Skinoren</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/tralokinumab">Tralokinumab</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/treatments/xamiol">Xamiol</NavLink>
-                </li>
-              </ul>
+      <div className="menu fixedMargin">
+        <NavLink to="/conditions">Conditions</NavLink>
+
+        <div className="withSubNav">
+          <NavLink to="/treatments">Treatments</NavLink>
+
+          <div className="subNav">
+            <div className="productOverview">
+              <div className="adtralza">
+                <NavLink to="/treatments/adtralza">Adtralza</NavLink>
+
+                <div className="subSubNav">
+                  <div className="productInfo">
+                    <NavLink to="/treatments/adtralza/overview">
+                      Overview
+                    </NavLink>
+
+                    <NavLink to="/treatments/adtralza/mode">
+                      Mode of Action
+                    </NavLink>
+
+                    <NavLink to="/treatments/adtralza/efficacy">
+                      Efficacy
+                    </NavLink>
+
+                    <NavLink to="/treatments/adtralza/quality">
+                      Quality of Life
+                    </NavLink>
+
+                    <NavLink to="/treatments/adtralza/safety">Safety</NavLink>
+
+                    <NavLink to="/treatments/adtralza/dosing">Dosing</NavLink>
+
+                    <NavLink to="/treatments/adtralza/news">News</NavLink>
+
+                    <NavLink to="/treatments/adtralza/information">
+                      Technical Information
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+
+              <NavLink to="/treatments/diavonex">Diavonex</NavLink>
+
+              <NavLink to="/treatments/diavobet">Diavobet</NavLink>
+
+              <NavLink to="/treatments/enstilar">Enstilar</NavLink>
+
+              <NavLink to="/treatments/fucidin">Fucidin</NavLink>
+
+              <NavLink to="/treatments/kyntheum">Kyntheum</NavLink>
+
+              <NavLink to="/treatments/protopic">Protopic</NavLink>
+
+              <NavLink to="/treatments/skinoren">Skinoren</NavLink>
+
+              <NavLink to="/treatments/tralokinumab">Tralokinumab</NavLink>
+
+              <NavLink to="/treatments/xamiol">Xamiol</NavLink>
             </div>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/events">Events</NavLink>
-        </li>
-        <li>
-          <NavLink to="/tools">Tools</NavLink>
-        </li>
-        <li>
-          <NavLink to="/research">Research & Findings</NavLink>
-        </li>
+          </div>
+        </div>
+
+        <NavLink to="/events">Events</NavLink>
+
+        <NavLink to="/tools">Tools</NavLink>
+
+        <NavLink to="/research">Research & Findings</NavLink>
+
         <Search />
-      </ul>
+      </div>
     </nav>
   );
 }

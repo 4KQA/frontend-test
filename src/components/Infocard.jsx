@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Infocard({
   imageSrc,
@@ -13,7 +13,7 @@ export default function Infocard({
       <div className="cardContent cardMargin">
         <h2>{heading}</h2>
         <p>{text}</p>
-        <a href={linkHref}>{linkText}</a>
+        <NavLink to={linkHref}>{linkText}</NavLink>
       </div>
     </div>
   );

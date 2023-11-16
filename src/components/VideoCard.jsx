@@ -26,7 +26,7 @@ export default function VideoCard({ placeholderSrc, videoSrc, title, text }) {
         )}
       </div>
       <div className="videoText">
-        <h4>{title}</h4>
+        <h2>{title}</h2>
         <p>{text}</p>
       </div>
     </div>
