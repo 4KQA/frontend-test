@@ -4,16 +4,16 @@ import Link from "next/link";
 
 async function FirstSection() {
   return (
-    <section className="bg-gray-200 ">
-      <div className="flex justify-center gap-36">
-        <Image className="mt-12" src={ProductImg}></Image>
-        <div className="max-w-md justify-center mt-24">
-          <h3 className="text-2xl mb-2">
+    <section className="bg-gray-200">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-center md:gap-36">
+        <Image className="mt-12 mb-12" src={ProductImg}></Image>
+        <div className="max-w-md text-center md:text-left md:mt-12">
+          <h3 className="text-2xl mb-6 text-sky-800">
             It is the first and only biologic developed to specifically
             neutralize IL-13, a key driver of atopic dermatitis signs and
             symptoms(1,2)
           </h3>
-          <Link href="/" className="mt-2">
+          <Link href="/" className="italic text-gray-500 block md:inline">
             Learn more about how Adtralza® works and how to use it in treatment.
           </Link>
         </div>

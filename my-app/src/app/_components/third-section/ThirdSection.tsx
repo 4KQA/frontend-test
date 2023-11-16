@@ -4,12 +4,12 @@ import VideoImg from "./video-thirdsection.png";
 async function ThirdSection() {
   return (
     <section className="bg-gray-200 p-4">
-      <div className="mx-2 md:mx-8 lg:mx-12">
-        <h2 className="text-2xl md:text-3xl max-w-3xl mt-6 md:mt-8">
+      <div className="mx-2 md:mx-8 lg:mx-12 ">
+        <h2 className="text-2xl md:text-3xl max-w-3xl mt-6 md:mt-8 text-sky-800">
           Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
           and symptoms.
         </h2>
-        <div className="mt-4 md:mt-6">
+        <div className="mt-4 md:mt-6 text-sky-900">
           <p className="max-w-md">
             By specifically targeting the IL-13 cytokine, Adtralza® inhibits the
             interaction with type II receptors and prevents IL-13-induced
