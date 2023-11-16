@@ -6,7 +6,7 @@ async function Footer() {
   return (
     <footer className=" bg-sky-600 p-12">
       <Image src={LeoLogo} width={100} height={100}></Image>
-      <ul className="flex text-white gap-6  justify-center">
+      <ul className="lg:flex block mt-4 text-white gap-6  justify-center">
         <Link href="/">
           <li>Contact </li>
         </Link>
