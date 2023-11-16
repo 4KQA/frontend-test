@@ -18,8 +18,6 @@ export default function Header() {
             </div>
 
             <NavLinks/>
-
-            <div>{/* TODO: RESPONSIVE */}</div>
         </header>
     )
 }

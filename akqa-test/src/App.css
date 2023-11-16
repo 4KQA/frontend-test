@@ -25,7 +25,7 @@
   overflow-x: hidden;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--bgGreyColor);
 }
 
