@@ -3,6 +3,8 @@ import MainNavigation from "./_components/navigation/MainNavigation";
 import Hero from "./_components/hero/Hero";
 import FirstSection from "./_components/first-section/FirstSection";
 import SecondSection from "./_components/second-section/SecondSection";
+import ThirdSection from "./_components/third-section/ThirdSection";
+import FourthSection from "./_components/fourth-section/FourthSection";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero></Hero>
       <FirstSection></FirstSection>
       <SecondSection></SecondSection>
+      <ThirdSection></ThirdSection>
+      <FourthSection></FourthSection>
     </main>
   );
 }
