@@ -1,15 +1,22 @@
 import PrimaryNavigation from "./components/PrimaryNavigation";
+import Hero from "./components/Hero";
+import ProductShowcase from "./components/ProductShowcase";
+import Testimonials from "./components/Testimonials";
+import Information from "./components/Information";
+import ClinicalTools from "./components/ClinicalTools";
+import Videos from "./components/Videos";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-8">
-        <PrimaryNavigation/>
+    <div className="py-10 italic font-thin">
+      <PrimaryNavigation />
       <main>
-        <h1>This is h1</h1>
-        <h2>This is h2</h2>
-        <h3>This is h3</h3>
-        <h4>This is h3</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, beatae! Odit error repellat dolorum? Totam voluptatem repellat consectetur quasi corrupti.</p>
+        <Hero />
+        <ProductShowcase />
+        <Testimonials />
+        <Information/>
+        <ClinicalTools/>
+        <Videos/>
       </main>
     </div>
   );
