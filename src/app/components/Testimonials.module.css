@@ -1,0 +1,12 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: span 4;
+}
+
+.gridItem {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  place-items: center;
+}
