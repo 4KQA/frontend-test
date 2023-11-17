@@ -13,7 +13,7 @@ export default function ProductAd({
   return (
     <>
       <div className="productAd">
-        <img src={heroSrc} alt={heroAlt} className="hero" />
+        <img src={heroSrc} alt={heroAlt} className="hero" width={"100%"} />
         <div className="heroText fixedMargin">
           <img src={logoSrc} alt={logoAlt} className="productLogo" />
 
