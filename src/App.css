@@ -72,7 +72,7 @@ a {
 }
 
 .subNav {
-  background-color: #e6e7e8;
+  background-color: #ededed;
   display: none; /* none */
 
   width: 100%;
@@ -136,7 +136,7 @@ a {
   width: 20vw;
   padding: 3%;
   border-radius: 50px;
-  border: 2px solid #e6e7e8;
+  border: 2px solid #ededed;
 
   position: relative;
   margin-top: -10%;
@@ -245,7 +245,7 @@ a {
 
 /*================ HOW IT WORKS =================*/
 .howItWorks {
-  background-color: #e6e7e8;
+  background-color: #ededed;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -255,7 +255,7 @@ a {
   padding-bottom: 5%;
 }
 
-.watchButton {
+.watchBtn {
   width: 15vw;
   margin-top: 11%;
   margin-bottom: 2%;
@@ -313,7 +313,7 @@ a {
 
 .infoCard {
   width: 48%;
-  background-color: #e6e7e8;
+  background-color: #ededed;
 }
 
 .infoCard p {
@@ -339,7 +339,7 @@ a {
 
 /*================== KOL VIDEOS ====================*/
 .KOL {
-  background-color: #e6e7e8;
+  background-color: #ededed;
   padding-top: 8%;
   padding-bottom: 8%;
 }
@@ -370,7 +370,7 @@ a {
   flex-wrap: wrap;
 }
 
-.playButton {
+.playBtn {
   color: #c017a2;
   background: none;
   border: none;
@@ -403,7 +403,7 @@ a {
 
 .footer p {
   width: 17%;
-  color: #e6e7e8;
+  color: #ededed;
   font-size: 0.7vw;
   line-height: 2.5vh;
 }
@@ -416,13 +416,13 @@ a {
 }
 
 .footer a {
-  color: #e6e7e8;
+  color: #ededed;
   font-size: 0.7vw;
   padding-left: 0.7%;
 }
 
 .divider {
-  color: #e6e7e8;
+  color: #ededed;
   padding-left: 0.7%;
 }
 
@@ -553,7 +553,7 @@ a {
 
   /*================ HOW IT WORKS ================*/
   .howItWorks {
-    background-color: #e6e7e8;
+    background-color: #ededed;
     padding-top: 10vh;
     padding-bottom: 10vh;
   }

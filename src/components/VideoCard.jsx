@@ -12,7 +12,7 @@ export default function VideoCard({ placeholderSrc, videoSrc, title, text }) {
       <div className="videoPlaceholder">
         {!isPlaying && (
           <div className="placeholder" onClick={playVideo}>
-            <button className="playButton">
+            <button className="playBtn">
               <FaCirclePlay size="3vw" />
             </button>
             <img src={placeholderSrc} alt="Video Placeholder" />

@@ -25,7 +25,7 @@ export default function ProductVideo({
           <p>— {point1}</p>
           <p>— {point2}</p>
           <p>— {point3}</p>
-          <button className="watchButton" onClick={playVideo}>
+          <button className="watchBtn" onClick={playVideo}>
             Watch the video
           </button>
           <br />
