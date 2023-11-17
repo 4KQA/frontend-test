@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Search from "../components/Search";
+import { FiMenu } from "react-icons/fi";
 
 export default function Navigation() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <nav className="navbar">
-      <div className="menu fixedMargin">
+      <div className="menuIcon" onClick={toggleMenu}>
+        <FiMenu size="12vw" color="#00609c" />
+      </div>
+      <div className={showMenu ? "menu active" : "menu"}>
         <NavLink to="/conditions">Conditions</NavLink>
 
         <div className="withSubNav">

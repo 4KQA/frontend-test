@@ -29,16 +29,12 @@ p {
   line-height: 3vh;
 }
 
-li {
-  font-family: "Source sans 3", sans-serif;
-  list-style: none;
-}
-
 a {
   text-decoration: none;
   color: #2a2a2a;
   font-size: 1vw;
   font-family: "Open Sans", sans-serif;
+  font-weight: 100;
 }
 
 /* HEADER */
@@ -59,13 +55,16 @@ a {
 
 .navbar {
   width: 100%;
-  height: 23vh;
+
   line-height: 9vh;
+  z-index: 1;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .menu a:hover {
@@ -74,11 +73,13 @@ a {
 
 .subNav {
   background-color: #e6e7e8;
-  display: block; /* none */
+  display: none; /* none */
 
   width: 100%;
   position: absolute;
   left: 0;
+
+  z-index: 1;
 }
 
 .subNav a {
@@ -103,7 +104,7 @@ a {
 
 .subSubNav {
   background-color: #00609c;
-  display: block; /* none */
+  display: none; /* none */
 
   width: 100%;
   position: absolute;
@@ -157,7 +158,7 @@ a {
   width: 27vw;
   position: absolute;
   top: 0;
-  margin-top: 60vh;
+  margin-top: 42vh;
 }
 
 .productLogo {
@@ -427,17 +428,225 @@ a {
 
 /* Mobil */
 @media (max-width: 767px) {
+  /*================== FONT REGLER ==================*/
+  h2 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 3.5vw;
+  }
+
+  a {
+    font-size: 3.5vw;
+  }
   /*================== HEADER ===================*/
   .header img {
     width: 40%;
   }
 
   /*================== NAVIGATION ====================*/
-  .menuIcon {
-    display: block;
+  .navbar {
+    position: absolute;
+    background-color: #f9f9f9;
   }
 
   .menu {
+    width: 40%;
+  }
+
+  .menu a {
+    font-size: 4vw;
+  }
+
+  .productOverview {
+    width: 10%;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 6vw;
+    margin-top: -14.5vh;
+  }
+
+  .menu,
+  .subNav,
+  .subSubNav {
     display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productOverview,
+  .productInfo {
+    flex-direction: column;
+  }
+
+  .subSubNav {
+    height: 81vh;
+  }
+
+  .subNav a,
+  .subSubNav a {
+    font-size: 4vw;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  /*=========== PRODUCTAD ============*/
+  .productAd {
+    height: 60vh;
+    background-color: #00609c;
+  }
+
+  .heroText {
+    width: 83%;
+  }
+
+  .productLogo {
+    width: 20vw;
+    margin-top: 3%;
+  }
+
+  .productAdText {
+    padding-top: 3vh;
+  }
+
+  /*=========== PRODUCT PRESENTATION ===========*/
+  .productPresentation {
+    height: 72vh;
+  }
+
+  .productPackaging {
+    flex-direction: column;
+  }
+
+  .productBox {
+    width: 80%;
+  }
+
+  .productPackagingText {
+    width: 100%;
+    margin-top: 1vh;
+  }
+
+  /*================ RESULTS ================*/
+  .productResults {
+    flex-direction: column;
+  }
+
+  .resultsColumn {
+    width: 100%;
+    margin-top: 8vh;
+  }
+
+  .resultsColumn img {
+    width: 60%;
+  }
+
+  /*================ HOW IT WORKS ================*/
+  .howItWorks {
+    background-color: #e6e7e8;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .howItWorks h2 {
+    color: #00609c;
+    padding-bottom: 5%;
+  }
+
+  .watchBtn {
+    width: 60vw;
+    font-size: 3.5vw;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .howItWorksFlex {
+    flex-direction: column;
+  }
+
+  .howItWorksText {
+    width: 100%;
+  }
+
+  .howItWorksText p {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+
+  .videoDuration {
+    font-size: 3vw;
+  }
+
+  .howItWorksVideo {
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  /*================ CLINICAL TOOLS ================*/
+  .infoCard {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .cardFlex {
+    flex-direction: column;
+  }
+
+  /*================ KOL ================*/
+  .videoFlex {
+    flex-direction: column;
+  }
+
+  .videoCard {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 15%;
+  }
+
+  .videoPlaceholder {
+    width: 100%;
+  }
+
+  .videoText {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .playBtn {
+    scale: 4;
+    margin-left: 37.5%;
+    margin-top: 22%;
+  }
+
+  /*==================== FOOTER ===================*/
+
+  .footer img {
+    width: 15vw;
+  }
+
+  .footer p {
+    width: 45%;
+    font-size: 2vw;
+    line-height: 2vh;
+  }
+
+  .footer a {
+    font-size: 2.5vw;
+    padding-left: 2%;
+  }
+
+  .divider {
+    padding-left: 2%;
   }
 }

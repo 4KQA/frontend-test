@@ -9,7 +9,7 @@ export default function Infocard({
 }) {
   return (
     <div className="infoCard">
-      <img src={imageSrc} alt="Card Image" />
+      <img className="hero" src={imageSrc} alt="Card Image" />
       <div className="cardContent cardMargin">
         <h2>{heading}</h2>
         <p>{text}</p>
