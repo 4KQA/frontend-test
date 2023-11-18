@@ -1,0 +1,104 @@
+/*Bubblessss*/
+.bub-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+
+.bub-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    text-align: center;
+
+    min-height: 30em;
+    margin: 5%;
+
+    font-style: italic;
+
+}
+
+.bub-txt-container h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.bub-img {
+    width: 60%;
+}
+
+/*TOOLS*/
+.tools{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    padding:5% 10%;
+    width:100%;
+}
+
+.tools > div{
+    display:flex;
+    flex-direction: row;
+    padding:5% 0;
+}
+
+.card-container {
+    margin: 0 2em;
+
+    width:100%;
+    min-height: 32em;
+    background-color: var(--bgGreyColor);
+}
+
+.card-img{
+    width:100%;
+}
+
+.c-txt, .e-txt{
+   word-wrap: break-word;
+   padding:5%;
+}
+
+/*EXPERT INSIGHTS - CARDS*/
+.expert-insight{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+    padding:8%;
+}
+
+h5{
+    font-family: var(--primaryFont);
+    color: var(--primaryC);
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.expert-insight article, .vCard{
+    display:flex;
+    flex-direction: row;
+}
+
+.e-video{
+    width:35em;
+    height:8em;
+    margin-right: 2%;
+    background-color: var(--w);
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+
+
+
