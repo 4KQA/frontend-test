@@ -1,0 +1,101 @@
+/* Product component style */
+
+.product{
+    background-color: #EEEEEE;
+}
+
+.product h1{
+    color: #00609C;
+    width: 100%;
+}
+
+.product p{
+    font-size: 18px;
+}
+
+section{
+    width: 40%;
+}
+
+section img{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+}
+
+/* How to component style */
+
+.first-step, .second-step, .third-step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.first-step p, .second-step p, .third-step p{
+    width: 60%;
+}
+
+.first-step img, .second-step img, .third-step img{
+    width: 180px;
+    height: 180px;
+}
+
+.first-step a, .second-step a, .third-step a, .card a{
+    color: #C017A2;
+    font-style: italic;
+}
+
+.how-to .box{
+    display: flex;
+    justify-content: center;
+}
+
+/* Video component style */
+
+.video{
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.video h1{
+    color: #00609C;
+}
+
+.video ul{
+    color: black;
+    display: inline;
+    font-style: italic;
+}
+
+/* Info guide component style */
+
+.card{
+    background-color: #EEEEEE;
+    padding: 0;
+    width: 40%;
+    margin-left: 15px;
+}
+
+.guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tools h1{
+    color: #00609C;
+}
+
+
+.tools h2{
+    font-size: 28px;
+    margin-top: 0;
+}

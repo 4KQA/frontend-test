@@ -1,0 +1,32 @@
+.backdrop{
+    width: 100%;
+    height: fit-content;
+    background-image: url(../components/img/ladies.png.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #06172a;
+    padding: 0;
+}
+
+.logo{
+    width: 122px;
+    margin-top: 40px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 80%;
+}
+
+h1{
+    color: white;
+    width: 40%;
+    margin-bottom: 40px;
+}
