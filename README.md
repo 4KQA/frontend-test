@@ -4,8 +4,6 @@ We will now kindly ask you to do a small test so that we can get a bit deeper in
 
 Here is the link: https://www.figma.com/file/Eu0LK5ielUlhT4LJoXjGm3/derma-demo
 
-hej
-
 ## The task
 
 1. Create a simple one-page website.
