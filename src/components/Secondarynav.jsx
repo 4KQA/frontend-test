@@ -33,7 +33,7 @@ function Secondarynav({ showThird, setShowThird }) {
   ];
 
   return (
-    <ul className="flex flex-row gap-5 bg-leoGray py-5 px-10">
+    <ul className="flex flex-col md:flex-row gap-5 bg-leoGray py-5 px-10">
       {secondNav.map((item) => (
         <li key={item.navTitle}>
           <button className="focus:border-b-2 foocus:text-leoBlue focus:border-solid focus:border-leoBlue" onClick={() => setShowThird(!showThird)}>
